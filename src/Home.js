@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Header from './Header';
+import FormLanding from './Formlanding';
+import Announcebar from './Announcebar';
+import Formstep1 from './Formstep1';
 
 
 
@@ -14,16 +18,19 @@ function Home() {
   
   // Attach observer to every [data-inviewport] element:
   const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
-  ELs_inViewport.forEach(EL => {
-    Obs.observe(EL, obsOptions);
-  });
 
+  useEffect(() => { 
+    ELs_inViewport.forEach(EL => {
+      Obs.observe(EL, obsOptions);
+    });
+  })
   
   return (
-    <div>
-   <div data-inviewport="scale-in"></div>
-<div data-inviewport="fade-rotate"></div>
-    </div>
+    <>
+      <Announcebar />
+      <Header />
+      <Formstep1 />
+    </>
   );
 }
 

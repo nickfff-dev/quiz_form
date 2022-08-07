@@ -1,22 +1,91 @@
-[data-inviewport] { /* THIS DEMO ONLY */
-  width:100px; height:100px; background:#0bf; margin: 150vh 0; 
+html{
+  font-size: 18px;
+  
+}
+body{
+  font-family:  "Baloo 2", sans-serif;
+}
+p{
+  margin: 0;
+  color: white;
+  font-size: 1.3rem;
+}
+label{
+  color: white;
+  font-size: 1.5rem;
+  display: block;
+ 
+
+ 
 }
 
-/* inViewport */
+span{
+font-size: 1rem;
+display: inline-block}
 
-[data-inviewport="scale-in"] { 
-  transition: 2s;
-  transform: scale(0.1);
-}
-[data-inviewport="scale-in"].is-inViewport { 
-  transform: scale(1);
+.btn{
+  padding: 0.5em 0.5em;
+  font-size: 1em;
+  background: #000;
 }
 
-[data-inviewport="fade-rotate"] { 
-  transition: 2s;
-  opacity: 0;
+h1{font-size: 1.9rem; color: white}
+
+.navbar-brand, .nav-link, input{
+  color: #fff;
 }
-[data-inviewport="fade-rotate"].is-inViewport { 
-  transform: rotate(180deg);
-  opacity: 1;
+
+
+.navbar-brand:hover, .nav-link:hover{
+  color: #fff;
+  text-decoration: underline;
 }
+
+
+.landing{
+  height: 100vh; 
+  padding: 25%;
+
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, 50%, #000), url("https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/33/714894/1.jpg?1523") center no-repeat;
+
+
+}
+.pinkbar{
+  background: pink;
+}
+.formstep1{
+  height: 90vh;
+  
+  padding-top:15%;
+
+  background: url("https://images.pexels.com/photos/12980713/pexels-photo-12980713.jpeg?auto=compress&cs=tinysrgb&w=1600")   no-repeat;
+  background-size: calc(97.6vh);
+  
+}
+
+
+input{
+  background-color: transparent;
+    max-width: 40%;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #fff 2px;
+    
+ 
+    
+}
+
+
+
+.step1{
+  
+  background: rgb(0, 0, 0)  no-repeat scroll ; 
+
+  padding: 5%;
+
+}
+
+
