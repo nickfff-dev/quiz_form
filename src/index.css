@@ -24,8 +24,8 @@ font-size: 1rem;
 display: inline-block}
 
 .btn{
-  padding: 0.5em 0.5em;
-  font-size: 1em;
+  padding: 0.5em 1.5em;
+  font-size: 0.8em;
   background: #000;
 }
 
@@ -52,14 +52,17 @@ h1{font-size: 1.9rem; color: white}
 }
 .pinkbar{
   background: pink;
+  max-height: 2rem;
+
 }
 .formstep1{
-  height: 90vh;
+  height: 100vh;
   
-  padding-top:15%;
+  padding-top:10%;
 
   background: url("https://images.pexels.com/photos/12980713/pexels-photo-12980713.jpeg?auto=compress&cs=tinysrgb&w=1600")   no-repeat;
-  background-size: calc(97.6vh);
+  background-size: 99vh;  
+
   
 }
 
@@ -84,8 +87,19 @@ input{
   
   background: rgb(0, 0, 0)  no-repeat scroll ; 
 
-  padding: 5%;
+  padding: 8%;
 
 }
 
 
+
+.formstep2{
+  height: 100vh; 
+  padding: 25%;
+  
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, 50%, pink);
+}
+label[htmlFor='que1']{
+  display: block;
+  margin-bottom: 1rem;
+}

@@ -3,6 +3,7 @@ import Header from './Header';
 import FormLanding from './Formlanding';
 import Announcebar from './Announcebar';
 import Formstep1 from './Formstep1';
+import Formstep2 from './Formstep2';
 
 
 
@@ -29,6 +30,7 @@ function Home() {
     <>
       <Announcebar />
       <Header />
+      {/* <FormLanding /> */}
       <Formstep1 />
     </>
   );
